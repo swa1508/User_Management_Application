@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:fragment="layout(content)" th:replace="base::layout(~{::section})">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login Page</title>
+  </head>
+  <body>
+  <section>
+  <br>
+    <div class="container">
+    	 <div class="row">
+		    <div class="col">
+		      <div class="card">
+				  <h5 class="card-header">User Login</h5>
+				  <div class="card-body">
+				   		<div class="row">
+							<div class="mb-3">
+							    <label for="InputUsername" class="form-label">Username</label>
+							    <input type="text" class="form-control" id="InputUsername" aria-describedby="InputUsername">
+							    <div id="InputUsername" class="form-text">Enter Username.</div>
+							</div>
+							<div class="mb-3">
+							    <label for="InputPassword" class="form-label">Password</label>
+							    <input type="password" class="form-control" id="InputLastName" aria-describedby="InputLastName">
+							    <div id="InputLastName" class="form-text">Enter Password</div>
+							</div>
+				   		</div>
+				    <a href="login" class="btn btn-primary" >Login</a>
+				    <a href="register" class="btn btn-primary" >Register</a>
+				  </div>
+				</div>
+		    </div>
+		  </div>
+		</div>
+  </section>
+  </body>
+</html>

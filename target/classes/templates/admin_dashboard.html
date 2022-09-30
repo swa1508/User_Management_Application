@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:fragment="layout(content)" th:replace="base::layout(~{::section})">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin DashBoard</title>
+  </head>
+  <body>
+  	<section>
+  		<h1>Admin Dashboard</h1>
+    	<a href="/" title="Go To Home Page">Home</a>
+  	</section>
+    
+  </body>
+</html>
+
+
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:fragment="layout(content)" th:replace="base::layout(~{::section})">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin DashBoard</title>
+  </head>
+  <body>
+   <section>
+   		<br>
+    	<div class="container"> <!--main container starts-->
+    	 <div class="row"><!--Row 1 starts-->
+		    <div class="col"> <!--Column 1 starts-->
+		      <div class="card">
+				  <h5 class="card-header">Admin DashBoard</h5>
+				  <div class="card-body">
+				   		<div class="row"> <!-- Card row 1 starts-->
+				   		
+				   				<!-- Card Column 1 starts-->
+				   				<div class="col">
+				   					<div class="mb-3">
+									    <label for="InputFirstName" class="form-label">First Name</label>
+									    <input type="text" class="form-control" id="InputFirstName" aria-describedby="InputFirstName">
+									    <div id="InputFirstName" class="form-text">Enter First Name with no special Character.</div>
+									</div>
+									
+									<div class="mb-3">
+									    <label for="InputLastName" class="form-label">Last Name</label>
+									    <input type="text" class="form-control" id="InputLastName" aria-describedby="InputLastName">
+									    <div id="InputLastName" class="form-text">Enter Last Name with no special Character..</div>
+									</div>
+				   				</div>
+				   				
+				   				<!-- Card Column 2 starts-->
+				   				<div class="col">
+						   			
+									<div class="mb-3">
+									    <label for="InputUsername" class="form-label">Username</label>
+									    <input type="text" class="form-control" id="InputUsername" aria-describedby="InputUsername">
+									    <div id="InputUsername" class="form-text">Enter Username.</div>
+									</div>
+									
+									<div class="mb-3">
+									    <label for="InputPassword" class="form-label">Password</label>
+									    <input type="password" class="form-control" id="InputLastName" aria-describedby="InputLastName">
+									    <div id="InputLastName" class="form-text">Enter Password</div>
+									</div>
+				   				</div>
+				   		</div>
+				    <a href="#" class="btn btn-primary" >Register</a>
+				  </div>
+				</div>
+		    </div><!--Column 1 ends-->
+		 </div><!--Row 1 ends-->
+		</div><!--main container ends-->
+   </section>
+  </body>
+</html>

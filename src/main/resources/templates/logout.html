@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:fragment="layout(content)" th:replace="base::layout(~{::section})">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Logout Page</title>
+  </head>
+  <body>
+  <section>
+  <br>
+    <div class="container">
+    	 <div class="row">
+		    <div class="col">
+		      <div class="card">
+				   <div class="card-body">
+				   		<center>
+				   			<p>You Have Successfully Logout, Please login again..</p>
+				   			<br>
+				    		<a href="login" class="btn btn-primary" >Login</a>
+				   		</center>
+				  </div>
+				</div>
+		    </div>
+		  </div>
+		</div>
+  </section>
+  </body>
+</html>
